@@ -1,0 +1,137 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+:root {
+  --primary-color: #1da1f2;
+  --secondary-color: #d9d9d9;
+  --link-color: #6e767d;
+  --background: #000000;
+  --image-source: url("https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png");
+}
+
+body {
+  background: var(--background);
+  margin: 0px;
+}
+
+.header-img {
+  padding: 15rem 0rem;
+  width: 35%;
+  height: 40%;
+  margin: auto;
+}
+
+.div-group {
+  margin: none;
+}
+
+.div-inline {
+  display: inline-block;
+}
+
+.div-inline-image {
+  float: left;
+  width: 55%;
+  height: 46rem;
+  max-width: 60rem;
+  background-image: var(--image-source);
+}
+
+.div-inline-black {
+  text-align: left;
+  padding: 10px;
+}
+
+.container {
+  margin-top: 6rem;
+}
+
+.heading {
+  color: var(--secondary-color);
+  padding-left: 0rem;
+}
+
+h1 {
+  margin: 50px 0px;
+  font-size: 65px;
+}
+
+h3 {
+  margin-bottom: 30px 0px;
+  font-size: 30px;
+}
+
+.input-text {
+  padding: 0.75rem 0.5rem;
+  margin-right: 0.75rem;
+  background: transparent;
+  color: var(--link-color);
+  font-size: 15px;
+  border: 0.05px solid var(--link-color);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.button {
+  border: 1.5px solid var(--primary-color);
+  border-radius: 2rem;
+  width: 20rem;
+  padding: 0.75rem 0rem;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.button-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.button-secondary {
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+.button-secondary-small {
+  max-width: 6rem;
+  display: inline;
+}
+
+.list-inline {
+  display: inline;
+  margin: 2px;
+  padding-right: 15px;
+  color: var(--link-color);
+  font-size: 13px;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  hover: underline;
+  font-size: 13px;
+}
+
+.link-gray {
+  color: var(--link-color);
+}
+
+.link-blue {
+  color: var(--primary-color);
+  padding: 0.5rem;
+}
+
+.footer {
+  bottom: 0rem;
+  position: fixed;
+  width: 100%;
+  background-color: var(--background);
+}
+
+footer ul {
+  padding-left: 0rem;
+}
