@@ -1,5 +1,24 @@
 import "./styles.css";
 
+var footerList = [
+  "About",
+  "Help Center",
+  "Terms of Service",
+  "Privacy Policy",
+  "Cookie Policy",
+  "Ads info",
+  "Blog",
+  "Status",
+  "Careers",
+  "Brand Resources",
+  "Advertising",
+  "Marketing",
+  "Twitter for Business",
+  "Developers",
+  "Directory",
+  "Settings"
+];
+
 export default function App() {
   return (
     <div className="App">
@@ -49,86 +68,13 @@ export default function App() {
 
       <footer className="footer">
         <ul>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              About
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Help Center
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Terms of Service
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Privacy Policy
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Cookie Policy
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Ads info
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Blog
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Status
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Careers
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Brand Resources
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Advertising
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Marketing
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Twitter for Business
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Developers
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Directory
-            </a>
-          </li>
-          <li className="list-inline">
-            <a href="/" className="link link-gray">
-              Settings
-            </a>
-          </li>
+          {footerList.map((item) => (
+            <li className="list-inline">
+              <a href="/" className="link link-gray">
+                {item}
+              </a>
+            </li>
+          ))}
           <li className="list-inline">© 2021 Twitter, Inc.</li>
         </ul>
       </footer>
